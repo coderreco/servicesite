@@ -2,16 +2,16 @@ import Image from 'next/image'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import logoLaravel from '@/images/logos/laravel.svg'
-import logoMirage from '@/images/logos/mirage.svg'
-import logoStatamic from '@/images/logos/statamic.svg'
-import logoStaticKit from '@/images/logos/statickit.svg'
-import logoTransistor from '@/images/logos/transistor.svg'
-import logoTuple from '@/images/logos/tuple.svg'
+// import logoLaravel from '@/images/logos/laravel.svg'
+// import logoMirage from '@/images/logos/mirage.svg'
+// import logoStatamic from '@/images/logos/statamic.svg'
+// import logoStaticKit from '@/images/logos/statickit.svg'
+// import logoTransistor from '@/images/logos/transistor.svg'
+// import logoTuple from '@/images/logos/tuple.svg'
 
 export function Hero() {
   return (
-    <Container className="pb-16 pt-20 text-center lg:pt-32">
+    <Container className="py-20 text-center lg:py-32">
       <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
         Websites{' '}
         <span className="relative whitespace-nowrap text-emerald-600">
@@ -32,7 +32,7 @@ export function Hero() {
         Get a professional website for your cleaning business in days.<br/>Transparent pricing, no hidden fees.
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
-        <Button href="/register">Get started</Button>
+        <Button href="https://cal.com/andrew-coderre/cleaning-template-onboarding">Get started</Button>
         <Button
           href=""
           variant="outline"
@@ -46,7 +46,7 @@ export function Hero() {
           <span className="ml-3">Watch video</span>
         </Button>
       </div>
-      <div className="mt-36 lg:mt-44">
+      {/* <div className="mt-36 lg:mt-44">
         <p className="font-display text-base text-slate-900">
           Trusted by these six companies so far
         </p>
@@ -80,7 +80,7 @@ export function Hero() {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
     </Container>
   )
 }

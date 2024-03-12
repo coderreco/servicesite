@@ -26,7 +26,7 @@ export function CallToAction() {
           <p className="mt-4 text-lg tracking-tight text-white">
             It&apos;s time to take your business to the next level. Book a call to start the onboarding process today. No strings attached
           </p>
-          <Button href="/register" color="white" className="mt-10">
+          <Button href="https://cal.com/andrew-coderre/cleaning-template-onboarding" color="white" className="mt-10">
             Get started
           </Button>
         </div>
