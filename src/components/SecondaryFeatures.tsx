@@ -20,10 +20,10 @@ interface Feature {
 
 const features: Array<Feature> = [
   {
-    name: 'Reporting',
-    summary: 'Stay on top of things with always up-to-date reporting features.',
+    name: 'Onboarding',
+    summary: 'Tell us about your business, your brand, and your goals.',
     description:
-      'We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.',
+      "Spend an hour with us to understand your site needs, so we can hit the ground running together. We will walk through your business goals, target audience, and the features you need to grow your business.",
     image: screenshotProfitLoss,
     icon: function ReportingIcon() {
       let id = useId()
@@ -54,11 +54,11 @@ const features: Array<Feature> = [
     },
   },
   {
-    name: 'Inventory',
+    name: 'Building',
     summary:
-      'Never lose track of what’s in stock with accurate inventory tracking.',
+      'See your dreams come to life as we tailor your website to your business.',
     description:
-      'We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure.',
+      "That;s right, unlike other templates we do the heavy lifting for you. We'll build your website to match your brand and your needs, so you can focus on what you do best.",
     image: screenshotInventory,
     icon: function InventoryIcon() {
       return (
@@ -82,11 +82,11 @@ const features: Array<Feature> = [
     },
   },
   {
-    name: 'Contacts',
+    name: 'Handoff',
     summary:
-      'Organize all of your contacts, service providers, and invoices in one place.',
+      'Take the reins with confidence, knowing we’re here to support you.',
     description:
-      'This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional.',
+      "Once we're done, we'll walk you through everything to make sure it's up to scratch, ensuring a smooth handover and your total satisfaction. All that you need to do is fill in the blanks and hit publish.",
     image: screenshotContacts,
     icon: function ContactsIcon() {
       return (
@@ -234,11 +234,10 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Simplify everyday business tasks.
+            We've already made it, easy.
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Because you’d probably be a little confused if we suggested you
-            complicate your everyday business tasks instead.
+            Get online in days, not months. We build industry-focused websites to help you experience growth and start driving organic traffic.
           </p>
         </div>
         <FeaturesMobile />
