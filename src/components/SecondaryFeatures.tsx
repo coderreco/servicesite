@@ -58,7 +58,7 @@ const features: Array<Feature> = [
     summary:
       'See your dreams come to life as we tailor your website to your business.',
     description:
-      "That;s right, unlike other templates we do the heavy lifting for you. We'll build your website to match your brand and your needs, so you can focus on what you do best.",
+      "That's right, unlike other templates we do the heavy lifting for you. We'll build your website to match your brand and your needs, so you can focus on what you do best.",
     image: screenshotInventory,
     icon: function InventoryIcon() {
       return (
@@ -234,7 +234,7 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            We've already made it, easy.
+            We&apos;ve already made it, easy.
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
             Get online in days, not months. We build industry-focused websites to help you experience growth and start driving organic traffic.

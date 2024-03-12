@@ -24,7 +24,7 @@ export function CallToAction() {
             Get started today
           </h2>
           <p className="mt-4 text-lg tracking-tight text-white">
-            It's time to take your business to the next level. Book a call to start the onboarding process today. No strings attached
+            It&apos;s time to take your business to the next level. Book a call to start the onboarding process today. No strings attached
           </p>
           <Button href="/register" color="white" className="mt-10">
             Get started
