@@ -2,7 +2,7 @@ import Image from "next/image";
 import AreaGraph from "./AreaGraph";
 import { Container } from "./Container";
 
-import avatarImage1 from "@/images/avatars/avatar-1.png";
+import lexiAvatar from "@/images/avatars/lexi.webp";
 import Link from "next/link";
 import { RiExternalLinkLine } from "@remixicon/react";
 
@@ -31,7 +31,7 @@ export default function CaseStudy() {
                   <div className="relative overflow-clip h-14 w-14 rounded-full bg-gray-50">
                     <Image
                       className="object-cover inset-0"
-                      src={avatarImage1}
+                      src={lexiAvatar}
                       alt="A headshot of of a woman laughing outside"
                       width={56}
                       height={56}

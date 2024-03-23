@@ -4,6 +4,7 @@ import colors from 'tailwindcss/colors';
 
 export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}', './node_modules/@medusajs/ui/dist/**/*.{js,jsx,ts,tsx}', './node_modules/@tremor/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
   theme: {
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],

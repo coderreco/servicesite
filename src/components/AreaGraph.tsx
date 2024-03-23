@@ -1,5 +1,7 @@
 "use client"
 import { AreaChart, Card } from '@tremor/react';
+import { inView } from 'framer-motion';
+import { useState } from 'react';
 
 const data = [
   {
@@ -103,18 +105,24 @@ const data = [
 ]
 
 export default function AreaGraph() { 
+  const [cardInView, setCardInView] = useState(false)
+
+  inView('#area-graph', () => { setCardInView(true); return () => setCardInView(false)})
 
   return (
-    <Card>
-    <AreaChart
-      data={data}
-      index="keyword"
-      categories={["Position", "Previous"]}
-      colors={["emerald-600", "rose-400"]}
-      curveType='monotone'
-      title="Keyword Position"
-      className='h-96 w-full'
-      showAnimation={true}
+    <Card
+      id='area-graph'
+      className='pr-2 pl-0 py-2 sm:p-4 md:p-6'
+    >
+      <AreaChart
+        data={data}
+        index="keyword"
+        categories={["Position", "Previous"]}
+        colors={["emerald-600", "rose-400"]}
+        curveType='monotone'
+        title="Keyword Position"
+        className='h-96 w-full'
+        showAnimation={cardInView}
         animationDuration={1500}
         showXAxis={false}
       />
