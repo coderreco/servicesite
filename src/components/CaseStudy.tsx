@@ -24,15 +24,15 @@ export default function CaseStudy() {
             <figure className="py-4 flex flex-auto flex-col justify-between">
               <blockquote className="text-lg leading-8 text-emerald-100">
                 <p>
-                  "Pure Cleaning Victoria has experienced exponential growth since implementing this website. It has been the key component in lead generation, instrumental in attracting new customers and expanding our reach. Every aspect is carefully curated to our niche, and is undoubtedly the reason for our rapid success as a new company in the space"
+                  &quot;Pure Cleaning Victoria has experienced exponential growth since implementing this website. It has been the key component in lead generation, instrumental in attracting new customers and expanding our reach. Every aspect is carefully curated to our niche, and is undoubtedly the reason for our rapid success as a new company in the space&quot;
                 </p>
               </blockquote>
                 <figcaption className="mt-10 flex items-center gap-x-6">
                   <div className="relative overflow-clip h-14 w-14 rounded-full bg-gray-50">
                     <Image
-                      className="h-14 w-14 rounded-full bg-gray-50"
+                      className="object-cover inset-0"
                       src={avatarImage1}
-                      alt=""
+                      alt="A headshot of of a woman laughing outside"
                       width={56}
                       height={56}
                     />
