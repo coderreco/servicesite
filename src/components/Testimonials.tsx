@@ -127,7 +127,7 @@ export default function TestimonialContent() {
             <figure className="py-4 flex flex-auto flex-col justify-between">
               <blockquote className="text-lg leading-8 text-gray-500">
                 <p>
-                  "{testimonial.content}"
+                  &quot;{testimonial.content}&quot;
                 </p>
               </blockquote>
               <figcaption className="mt-10 flex items-center gap-x-6">
