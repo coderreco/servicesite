@@ -3,14 +3,15 @@ import clsx from 'clsx'
 
 import '@/styles/tailwind.css'
 import { type Metadata } from 'next'
+import Providers from './Providers'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - TaxPal',
-    default: 'TaxPal - Accounting made simple for small businesses',
+    template: '%s - Cleaning Website Templates',
+    default: 'Cleaning Website Templates - A perfect solution for your cleaning business',
   },
   description:
-    'Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited.',
+    'Cleaning Website Templates is a perfect solution for your cleaning business. It is a modern, clean, and professional website template that is designed to showcase your cleaning services.',
 }
 
 const inter = Inter({
@@ -39,7 +40,11 @@ export default function RootLayout({
         lexend.variable,
       )}
     >
-      <body className="flex h-full flex-col">{children}</body>
+      <body className="flex h-full flex-col">
+        <Providers>
+          {children}
+        </Providers>
+      </body>
     </html>
   )
 }

@@ -29,7 +29,7 @@ export function Hero() {
         for cleaning businesses.
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-        Get a professional website for your cleaning business in days.<br/>Transparent pricing, no hidden fees.
+        Get a professional website for your cleaning business that <strong>ranks higher</strong> in search engines and <strong>converts more</strong> visitors into leads.
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
         <Button href="https://cal.com/andrew-coderre/cleaning-template-onboarding">Get started</Button>

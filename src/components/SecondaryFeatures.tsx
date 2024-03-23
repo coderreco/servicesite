@@ -23,7 +23,7 @@ const features: Array<Feature> = [
     name: 'Onboarding',
     summary: 'Tell us about your business, your brand, and your goals.',
     description:
-      "Spend an hour with us to understand your site needs, so we can hit the ground running together. We will walk through your business goals, target audience, and the features you need to grow your business.",
+      "Spend an hour with us to start parsing your content and understanding your site needs, so we can hit the ground running together. We will walk through your business goals, target audience, and the features you need to grow your business.",
     image: screenshotProfitLoss,
     icon: function ReportingIcon() {
       let id = useId()
@@ -58,7 +58,7 @@ const features: Array<Feature> = [
     summary:
       'See your dreams come to life as we tailor your website to your business.',
     description:
-      "That's right, unlike other templates we do the heavy lifting for you. We'll build your website to match your brand and your needs, so you can focus on what you do best.",
+      "Once we're done, we'll walk you through everything to make sure it's up to scratch, ensuring a smooth handover and your total satisfaction. All that you need to do is fill in the blanks and hit publish.",
     image: screenshotInventory,
     icon: function InventoryIcon() {
       return (
@@ -234,10 +234,10 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            We&apos;ve already made it, easy.
+            We&apos;ve already made it easy.
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Get online in days, not months. We build industry-focused websites to help you experience growth and start driving organic traffic.
+            Get online in days, not months. We build industry-focused websites to help you experience growth and start driving organic traffic. The process is simple:
           </p>
         </div>
         <FeaturesMobile />
