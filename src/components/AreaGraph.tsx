@@ -117,8 +117,8 @@ export default function AreaGraph() {
       <AreaChart
         data={data}
         index="keyword"
-        categories={["Position", "Previous"]}
-        colors={["emerald-600", "rose-400"]}
+        categories={["Position"]}
+        colors={["emerald-600"]}
         curveType='monotone'
         title="Keyword Position"
         className='h-96 w-full'
@@ -128,5 +128,4 @@ export default function AreaGraph() {
       />
     </Card>
   )
-
 }

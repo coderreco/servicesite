@@ -3,12 +3,6 @@ import { Container } from "./Container";
 
 const featureComparison = [
   {
-    Feature: "Price",
-    OurService: "$1,197",
-    AgencyBuilt: "$5,000 - $10,000+",
-    DIY: "$20 - $300/month"
-  },
-  {
     Feature: "Build Time",
     OurService: "1-2 weeks",
     AgencyBuilt: "4-12 weeks",
@@ -92,7 +86,7 @@ export default function Comparison() {
   return (
     <section className="bg-gray-50 py-20">
       <Container>
-        <div className="mx-auto max-w-3xl mb-24 md:text-center">
+        <div className="mx-auto max-w-3xl mb-16 md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
             How do we fare against the competition?
           </h2>
@@ -103,19 +97,41 @@ export default function Comparison() {
         </div>
         <div className="overflow-x-auto">
           <Table className="min-w-full">
-            <Table.Header className="">
-              <Table.Row className="bg-transparent !border-b-0 border-y-0 font-bold">
-                <Table.HeaderCell className="font-bold">Feature</Table.HeaderCell>
-                <Table.HeaderCell>Our Service</Table.HeaderCell>
-                <Table.HeaderCell>Agency Built</Table.HeaderCell>
-                <Table.HeaderCell>DIY</Table.HeaderCell>
+            <Table.Header className="border-y-0">
+              <Table.Row className="bg-transparent !border-t-0 font-bold *:min-w-52 *:px-2 lg:*:px-4 *:pt-10 *:pb-4">
+                <Table.HeaderCell className="font-bold"></Table.HeaderCell>
+                <Table.HeaderCell className="bg-emerald-600 text-white font-bold rounded-t-4xl">
+                  Our Service
+                  <p className=" flex items-baseline gap-x-1">
+                  <span className="text-xl font-bold">$1,197</span>
+                  </p>
+                </Table.HeaderCell>
+                <Table.HeaderCell>
+                  Agency Built
+                  <p className=" flex items-baseline gap-x-1 text-gray-900">
+                <span className="text-xl font-bold">$5,000–$10,000</span>
+              </p>
+                </Table.HeaderCell>
+                <Table.HeaderCell>
+                  DIY
+                  <p className=" flex items-baseline gap-x-1 text-gray-900">
+                <span className="text-xl font-bold">$20–$300</span>
+                <span className="text-sm font-semibold">/month</span>
+              </p>
+                </Table.HeaderCell>
               </Table.Row>
             </Table.Header>
             <Table.Body>
+                <Table.Row className="bg-transparent *:min-w-52 *:px-2 lg:*:px-4 *:py-1">
+                  <Table.Cell className="font-bold">Feature</Table.Cell>
+                  <Table.Cell className="bg-emerald-600 text-white font-bold"></Table.Cell>
+                  <Table.Cell></Table.Cell>
+                  <Table.Cell></Table.Cell>
+                </Table.Row>
               {featureComparison.map((row, index) => (
-                <Table.Row key={index} className="bg-transparent !border-b-0 hover:bg-gray-100">
-                  <Table.Cell className="font-bold">{row.Feature}</Table.Cell>
-                  <Table.Cell className="font-medium">{row.OurService}</Table.Cell>
+                <Table.Row key={index} className="bg-transparent hover:bg-gray-100 *:min-w-52 *:px-2 lg:*:px-4 *:py-1">
+                  <Table.Cell className="">{row.Feature}</Table.Cell>
+                  <Table.Cell className="bg-emerald-600 text-white font-bold">{row.OurService}</Table.Cell>
                   <Table.Cell>{row.AgencyBuilt}</Table.Cell>
                   <Table.Cell>{row.DIY}</Table.Cell>
                 </Table.Row>

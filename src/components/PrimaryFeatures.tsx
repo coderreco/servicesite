@@ -153,7 +153,7 @@ export function PrimaryFeatures() {
                         src={feature.image}
                         alt="a screenshot of a cleaning business website"
                         priority
-                        sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
+                        sizes="(min-width: 1024px) 75rem, (min-width: 640px) 100vw, 45rem"
                       />
                     </div>
                   </Tab.Panel>
