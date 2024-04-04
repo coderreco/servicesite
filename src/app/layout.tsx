@@ -4,6 +4,7 @@ import clsx from 'clsx'
 import '@/styles/tailwind.css'
 import { type Metadata } from 'next'
 import Providers from './Providers'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: {
@@ -44,6 +45,15 @@ export default function RootLayout({
         <Providers>
           {children}
         </Providers>
+        <Script src='https://www.googletagmanager.com/gtag/js?id=G-R482YCN0X9' />
+        <Script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-R482YCN0X9');
+          `}
+        </Script>
       </body>
     </html>
   )
