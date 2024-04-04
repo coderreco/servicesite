@@ -46,7 +46,7 @@ export default function RootLayout({
           {children}
         </Providers>
         <Script src='https://www.googletagmanager.com/gtag/js?id=G-R482YCN0X9' />
-        <Script>
+        <Script id='gtag'>
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
