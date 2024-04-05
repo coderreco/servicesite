@@ -6,7 +6,7 @@ import { useEffect } from "react";
 	useEffect(()=>{
 	  (async function () {
       const cal = await getCalApi();
-      cal("floatingButton", {"calLink":"andrew-coderre/cleaning-template-onboarding","buttonColor":"#059669","buttonText":"Learn more"});
+      cal("floatingButton", {"calLink":"andrew-coderre/cleaning-template-onboarding","buttonColor":"#059669","buttonText":"Learn more","buttonPosition":"bottom-left"});
       cal("ui", { "styles": { "branding": { "brandColor": "#059669" } }, "hideEventTypeDetails": false, "layout": "month_view" });
 	  })();
 	}, [])

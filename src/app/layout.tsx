@@ -5,6 +5,7 @@ import '@/styles/tailwind.css'
 import { type Metadata } from 'next'
 import Providers from './Providers'
 import Script from 'next/script'
+import { GoogleTagManager } from '@next/third-parties/google'
 
 export const metadata: Metadata = {
   title: {
@@ -65,6 +66,7 @@ export default function RootLayout({
         lexend.variable,
       )}
     >
+      <GoogleTagManager gtmId='GTM-M5FFMNVZ' />
       <body className="flex h-full flex-col">
         <Providers>
           {children}
