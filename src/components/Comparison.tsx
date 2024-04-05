@@ -84,7 +84,7 @@ const featureComparison = [
 
 export default function Comparison() {
   return (
-    <section className="bg-gray-50 py-20">
+    <section id="pricing" className="bg-gray-50 py-20">
       <Container>
         <div className="mx-auto max-w-3xl mb-16 md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">

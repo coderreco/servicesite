@@ -8,7 +8,7 @@ import { RiExternalLinkLine } from "@remixicon/react";
 
 export default function CaseStudy() {
   return (
-    <section id="case-study" className="relative overflow-clip bg-emerald-600  pb-28 pt-20 sm:py-32">
+    <section id="casestudy" className="relative overflow-clip bg-emerald-600  pb-28 pt-20 sm:py-32">
       <Container className="relative">
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
