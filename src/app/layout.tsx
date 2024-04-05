@@ -13,6 +13,30 @@ export const metadata: Metadata = {
   },
   description:
     'Cleaning Website Templates is a perfect solution for your cleaning business. It is a modern, clean, and professional website template that is designed to showcase your cleaning services.',
+  openGraph: {
+    title: 'Cleaning Website Templates - A perfect solution for your cleaning business',
+    description:
+      'Cleaning Website Templates is a perfect solution for your cleaning business. It is a modern, clean, and professional website template that is designed to showcase your cleaning services.',
+    images: [
+      {
+        url: 'https://www.cleaningwebsitetemplates.com/opengraph.png',
+        width: 1200,
+        height: 630,
+        alt: 'Cleaning Website Templates - A perfect solution for your cleaning business',
+      },
+    ],
+    siteName: 'Cleaning Website Templates',
+    type: 'website',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Cleaning Website Templates - A perfect solution for your cleaning business',
+    description:
+      'Cleaning Website Templates is a perfect solution for your cleaning business. It is a modern, clean, and professional website template that is designed to showcase your cleaning services.',
+    images: ['https://www.cleaningwebsitetemplates.com/twitter-card.png'],
+    creator: '@coderreco'
+  }
 }
 
 const inter = Inter({
