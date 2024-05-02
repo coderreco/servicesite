@@ -81,12 +81,12 @@ export function PrimaryFeatures() {
       /> */}
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Clean up online conversions
-          </h2>
-          <p className="mt-6 text-2xl tracking-tight text-emerald-100">
+          <h2 className="font-display text-3xl max-w-3xl mx-auto tracking-tight text-white sm:text-4xl md:text-5xl">
             Empower Your Cleaning Business with a Better Website
-          </p>
+          </h2>
+          {/* <p className="mt-6 text-2xl tracking-tight text-emerald-100">
+            Empower Your Cleaning Business with a Better Website
+          </p> */}
           <p className="mt-6 max-w-2xl mx-auto text-base tracking-tight text-white">
             We make websites simple for cleaning businesses, providing you with a seamless solution to establish your online presence. With our collaborative approach, we work closely with you to import your content into our pre-made website template, creating a comprehensive, high-converting Webflow Website tailored to your needs.
             Connect with your customers and drive organic growth with an industry-focused website.
