@@ -168,7 +168,7 @@ export default function MockupPageTemplate() {
           </Switch.Group> */}
         </div>
         <div className="mt-10">
-          <SubmitButton text="Get my free mockup" disabled={!agreed} />
+          <SubmitButton text="Get my free mockup" />
         </div>
       </form>
     </div>
