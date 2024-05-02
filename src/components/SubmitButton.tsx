@@ -5,7 +5,7 @@ import clsx from "clsx"
 
 type SubmitButtonProps = {
   text: string,
-  disabled: boolean,
+  disabled?: boolean,
 }
 
 export default function SubmitButton({text, disabled}: SubmitButtonProps) { 
