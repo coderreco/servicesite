@@ -6,6 +6,7 @@ import { type Metadata } from 'next'
 import Providers from './Providers'
 import Script from 'next/script'
 import { GoogleTagManager } from '@next/third-parties/google'
+import { Analytics } from '@vercel/analytics/next'
 
 export const metadata: Metadata = {
   title: {
@@ -71,6 +72,7 @@ export default function RootLayout({
         <Providers>
           {children}
         </Providers>
+        <Analytics />
         <Script src='https://www.googletagmanager.com/gtag/js?id=G-R482YCN0X9' />
         <Script id='gtag'>
           {`
