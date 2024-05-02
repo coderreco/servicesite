@@ -1,5 +1,6 @@
 import { Table } from "@medusajs/ui";
 import { Container } from "./Container";
+import { Button } from "./Button";
 
 const featureComparison = [
   {
@@ -103,7 +104,7 @@ export default function Comparison() {
                 <Table.HeaderCell className="bg-emerald-600 text-white font-bold rounded-t-4xl">
                   Our Service
                   <p className=" flex items-baseline gap-x-1">
-                  <span className="text-xl font-bold">$1,197</span>
+                  <span className="text-xl font-bold">$1,397</span>
                   </p>
                 </Table.HeaderCell>
                 <Table.HeaderCell>
@@ -137,7 +138,22 @@ export default function Comparison() {
                 </Table.Row>
               ))}
             </Table.Body>
-            </Table>
+          </Table>
+          <div className="mt-12 pb-1 flex justify-center gap-x-6">
+        <Button href="/mockup">Get my mockup</Button>
+        <Button
+          href="https://cal.com/team/industry-website-templates/cleaning-template-information"
+          variant="outline"
+        >
+          {/* <svg
+            aria-hidden="true"
+            className="h-3 w-3 flex-none fill-emerald-600 group-active:fill-current"
+          >
+            <path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z" />
+          </svg> */}
+          <span>Learn more</span>
+        </Button>
+      </div>
           </div>
       </Container>
       

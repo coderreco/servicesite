@@ -1,99 +1,44 @@
-import Image from 'next/image'
 
 import { Container } from '@/components/Container'
-import avatarImage1 from '@/images/avatars/avatar-1.png'
-import avatarImage2 from '@/images/avatars/avatar-2.png'
-import avatarImage3 from '@/images/avatars/avatar-3.png'
-import avatarImage4 from '@/images/avatars/avatar-4.png'
-import avatarImage5 from '@/images/avatars/avatar-5.png'
 import clsx from 'clsx'
+import { Suspense } from 'react'
+import { unstable_cache } from 'next/cache'
+import { TweetSkeleton, EmbeddedTweet, TweetNotFound } from 'react-tweet'
+import { getTweet as _getTweet } from 'react-tweet/api'
+ 
+const getTweet = unstable_cache(
+  async (id: string) => _getTweet(id),
+  ['tweet'],
+  { revalidate: 3600 * 24 }
+)
 
-// const testimonials = [
-//   [
-//     {
-//       content:
-//         'TaxPal is so easy to use I can’t help but wonder if it’s really doing the things the government expects me to do.',
-//       author: {
-//         name: 'Sheryl Berge',
-//         role: 'CEO at Lynch LLC',
-//         image: avatarImage1,
-//       },
-//     },
-//     {
-//       content:
-//         'I’m trying to get a hold of someone in support, I’m in a lot of trouble right now and they are saying it has something to do with my books. Please get back to me right away.',
-//       author: {
-//         name: 'Amy Hahn',
-//         role: 'Director at Velocity Industries',
-//         image: avatarImage4,
-//       },
-//     },
-//   ],
-//   [
-//     {
-//       content:
-//         'The best part about TaxPal is every time I pay my employees, my bank balance doesn’t go down like it used to. Looking forward to spending this extra cash when I figure out why my card is being declined.',
-//       author: {
-//         name: 'Leland Kiehn',
-//         role: 'Founder of Kiehn and Sons',
-//         image: avatarImage5,
-//       },
-//     },
-//     {
-//       content:
-//         'There are so many things I had to do with my old software that I just don’t do at all with TaxPal. Suspicious but I can’t say I don’t love it.',
-//       author: {
-//         name: 'Erin Powlowski',
-//         role: 'COO at Armstrong Inc',
-//         image: avatarImage2,
-//       },
-//     },
-//   ],
-//   [
-//     {
-//       content:
-//         'I used to have to remit tax to the EU and with TaxPal I somehow don’t have to do that anymore. Nervous to travel there now though.',
-//       author: {
-//         name: 'Peter Renolds',
-//         role: 'Founder of West Inc',
-//         image: avatarImage3,
-//       },
-//     },
-//     {
-//       content:
-//         'This is the fourth email I’ve sent to your support team. I am literally being held in jail for tax fraud. Please answer your damn emails, this is important.',
-//       author: {
-//         name: 'Amy Hahn',
-//         role: 'Director at Velocity Industries',
-//         image: avatarImage4,
-//       },
-//     },
-//   ],
-// ]
-
-let testimonials =  [
-    // {
-    //   content: "Pure Cleaning Victoria has experienced exponential growth since implementing this website. It has been the key component in lead generation, instrumental in attracting new customers and expanding our reach. Every aspect is carefully curated to our niche, and is undoubtedly the reason for our rapid success as a new company in the space",
-    //   author: {
-    //     name: "Lexi Vindisch",
-    //     role: "Owner of Pure Cleaning Victoria"
-    //   }
-    // },
-    {
-      content: "This Website was a game-changer for our cleaning business. Their template not only streamlined our online presence but also significantly boosted our SEO. We couldn't be happier with the results.",
-      author: {
-        name: "John Smith",
-        role: "Owner of Sparkle Clean Solutions"
-      }
+  
+let tweets = [
+  {
+    id: "1780593258189480184",
   },
   {
-    content: "What you've already created is leaps and bounds ahead of our old Booking Koala website. Can't wait to see how much better it converts!",
-    author: {
-      name: "Max Tendero",
-      role: "Owner of Keep A Cleaning Company"
-    }
+    id: "1780368896895471972",
   },
-  ]
+  {
+    id: "1776269705453387834",
+  },
+  {
+    id: "1785722436308160816"
+  },
+  {
+    id: "1784007427677155410"
+  },
+  {
+    id: "1781028143320432741"
+  },
+  {
+    id: "1775913715302621603"
+  },
+  {
+    id: "1755646703280005570"
+  },
+]
 
 export function Testimonials() {
   return (
@@ -112,35 +57,36 @@ export function Testimonials() {
             with it.
           </p>
         </div>
-        <TestimonialContent />
+        {/* <TestimonialContent /> */}
+        <SocialTestimonials />
       </Container>
     </section>
   )
 }
 
-export default function TestimonialContent() {
+export function SocialTestimonials() {
   return (
       <div className="mx-auto mt-12 max-w-7xl">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className={clsx("flex flex-col pb-10 sm:pb-16 lg:pb-0 md:px-12", index !== 0 && "lg:border-l lg:border-gray-600")}>
-            <figure className="py-4 flex flex-auto flex-col justify-between">
-              <blockquote className="text-lg leading-8 text-gray-500">
-                <p>
-                  &quot;{testimonial.content}&quot;
-                </p>
-              </blockquote>
-              <figcaption className="mt-10 flex items-center gap-x-6">
-                <div className="text-base">
-                    <div className="font-semibold text-gray-900">{ testimonial.author.name }</div>
-                    <div className="mt-1 text-gray-500">{ testimonial.author.role }</div>
-                </div>
-              </figcaption>
-            </figure>
-          </div>
+        <ul className="max-w-7xl mx-auto md:columns-2 lg:columns-3 md:space-y-2 md:gap-2">
+          {tweets.map((tweet, index) => (
+            <li key={index} className="break-inside-avoid bg-transparent items-center justify-center h-full flex">
+              <Suspense fallback={<TweetSkeleton />}>
+                <Tweet id={tweet.id} />
+              </Suspense>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
   )
 }
 
+const Tweet = async ({ id }: { id: string }) => {
+  try {
+    const tweet = await getTweet(id)
+    return tweet ? <EmbeddedTweet tweet={tweet} /> : <TweetNotFound />
+  } catch (error) {
+    console.error(error)
+    return <TweetNotFound error={error} />
+  }
+}
+ 

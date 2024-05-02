@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (max-width: 1280px) {
+  .react-tweet-theme {
+    --tweet-container-margin: 0px !important;
+    --tweet-body-font-size: 1rem !important;
+    --tweet-body-line-height: 1.5rem !important;
+    --tweet-info-font-size: 1rem !important;
+    --tweet-info-line-height: 1.5rem;
+    --tweet-quoted-body-font-size: 1rem !important;
+    --tweet-actions-font-size: 0.875rem !important;
+    --tweet-actions-icon-size: 1.25em !important;
+    --tweet-replies-font-size: 0.9rem !important
+  }
+}
+
+.react-tweet-theme {
+  --tweet-container-margin: 0px !important;
+  --tweet-body-font-size: 0.875rem !important;
+  --tweet-body-line-height: 1.25rem !important;
+  --tweet-info-font-size: 0.875rem !important;
+  --tweet-info-line-height: 1.25rem;
+  --tweet-quoted-body-font-size: 0.875rem !important;
+  --tweet-actions-font-size: 0.75rem !important;
+  --tweet-actions-icon-size: 1.15em !important;
+  --tweet-replies-font-size: 0.8rem !important
+}

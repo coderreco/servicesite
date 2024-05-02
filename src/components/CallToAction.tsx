@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 
@@ -9,25 +7,30 @@ export function CallToAction() {
       id="get-started-today"
       className="relative overflow-hidden bg-emerald-600 py-32"
     >
-      {/* <Image
-        className="absolute left-1/2 top-1/2 max-w-none -translate-x-1/2 -translate-y-1/2"
-        src={backgroundImage}
-        alt=""
-        width={2347}
-        height={1244}
-        unoptimized
-      /> */}
       <Container className="relative">
         <div className="mx-auto max-w-lg text-center">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
-            Get started today
+            Get a free mockup
           </h2>
           <p className="mt-4 text-lg tracking-tight text-white">
-            It&apos;s time to take your business to the next level. Book a call to start the onboarding process today. No strings attached
+            Send us your website and we&apos;ll show you how it can look using our template, at no charge.
           </p>
-          <Button href="https://cal.com/andrew-coderre/cleaning-template-onboarding" color="white" className="mt-10">
-            Get started
-          </Button>
+          <div className="mt-6 flex justify-center gap-x-6">
+            <Button href="/mockup" color='white'>Get my mockup</Button>
+            <Button
+              href="https://cal.com/team/industry-website-templates/cleaning-template-information"
+              variant="outline"
+              color='white'
+            >
+              {/* <svg
+                aria-hidden="true"
+                className="h-3 w-3 flex-none fill-emerald-600 group-active:fill-current"
+              >
+                <path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z" />
+              </svg> */}
+              <span>Learn more</span>
+            </Button>
+          </div>
         </div>
       </Container>
     </section>

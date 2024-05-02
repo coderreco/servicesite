@@ -6,7 +6,7 @@ const Spinner: React.FC = () => {
   return (
     <div
       className={clsx(
-        "flex items-center justify-center h-6 w-6",
+        "flex items-center justify-center h-6 w-6 mx-auto",
       )}
     >
       <div className="relative flex h-full w-full items-center justify-center">
