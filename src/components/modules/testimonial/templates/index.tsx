@@ -158,11 +158,7 @@ export default function TestimonialPageTemplate() {
               </Switch>
             </div>
             <Switch.Label className="text-sm leading-6 text-gray-600">
-              By selecting this, you agree to our{' '}
-              <a href="#" className="font-semibold text-emerald-600">
-                privacy&nbsp;policy
-              </a>
-              .
+              By selecting this, you acknowledge that your review may be used for marketing purposes.
             </Switch.Label>
           </Switch.Group>
         </div>
