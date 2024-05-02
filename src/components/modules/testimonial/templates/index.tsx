@@ -11,7 +11,7 @@ export default function TestimonialPageTemplate() {
   const [agreed, setAgreed] = useState(false)
 
   return (
-    <div className="isolate px-6 py-20 lg:px-8">
+    <div className="isolate px-6 py-24 lg:px-8">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-display tracking-tight text-gray-900 sm:text-4xl">How did we do?</h2>
         <p className="mt-2 text-base leading-8 text-gray-600">
