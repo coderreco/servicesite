@@ -22,7 +22,7 @@ export default function Home() {
         <SecondaryFeatures />
         <CaseStudy />
         <Testimonials />
-        {/* <MacbookScroll src='/milton.png' title="Clean up online conversions" badge={<Logo/>} /> */}
+        <MacbookScroll src='/milton.png' title="Clean up online conversions" badge={<Logo/>} />
         <CallToAction />
         <Comparison />
         <Faqs />
