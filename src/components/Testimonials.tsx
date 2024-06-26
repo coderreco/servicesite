@@ -67,7 +67,7 @@ export function Testimonials() {
 export function SocialTestimonials() {
   return (
       <div className="mx-auto mt-12 max-w-7xl">
-        <ul className="max-w-7xl mx-auto md:columns-2 lg:columns-3 space-y-2 gap-2">
+        <ul className="max-w-7xl mx-auto md:columns-2 lg:columns-3 xl:columns-4 space-y-2 gap-2">
           {tweets.map((tweet, index) => (
             <li key={index} className="break-inside-avoid bg-transparent items-center justify-center h-full flex">
               <Suspense fallback={<TweetSkeleton />}>
