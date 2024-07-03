@@ -4,8 +4,7 @@ import clsx from 'clsx'
 import '@/styles/tailwind.css'
 import { type Metadata } from 'next'
 import Providers from './Providers'
-import Script from 'next/script'
-import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 import { Analytics } from '@vercel/analytics/next'
 
 export const metadata: Metadata = {
@@ -72,16 +71,8 @@ export default function RootLayout({
         <Providers>
           {children}
         </Providers>
+        <GoogleAnalytics gaId='G-R482YCN0X9' />
         <Analytics />
-        <Script src='https://www.googletagmanager.com/gtag/js?id=G-R482YCN0X9' />
-        <Script id='gtag'>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-R482YCN0X9');
-          `}
-        </Script>
       </body>
     </html>
   )
