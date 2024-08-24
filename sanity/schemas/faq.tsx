@@ -1,5 +1,4 @@
-import { defineField, defineType } from "sanity";
-
+import { defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'faq',
@@ -9,12 +8,12 @@ export default defineType({
     defineField({
       name: 'question',
       title: 'Question',
-      type: 'string'
+      type: 'string',
     }),
     defineField({
       name: 'answer',
       title: 'Answer',
-      type: 'text'
-    })
-  ]
+      type: 'text',
+    }),
+  ],
 })

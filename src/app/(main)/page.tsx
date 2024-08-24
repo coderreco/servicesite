@@ -7,12 +7,12 @@ import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { Logo } from '@/components/Logo'
 import { MacbookScroll } from '@/components/MacbookScroll'
+import Pricing from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import { Testimonials } from '@/components/Testimonials'
 
 export default function Home() {
-
   return (
     <>
       <Header />
@@ -22,9 +22,14 @@ export default function Home() {
         <SecondaryFeatures />
         <CaseStudy />
         <Testimonials />
-        <MacbookScroll src='/milton.png' title="Clean up online conversions" badge={<Logo/>} />
+        <MacbookScroll
+          src="/milton.png"
+          title="Clean up online conversions"
+          badge={<Logo />}
+        />
         <CallToAction />
         <Comparison />
+        <Pricing />
         <Faqs />
       </main>
       <Footer />

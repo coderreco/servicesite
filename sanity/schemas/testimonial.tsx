@@ -15,12 +15,12 @@ export default defineType({
       title: 'Source',
       type: 'string',
       options: {
-        list: ['Twitter', 'Email', 'Facebook', 'LinkedIn']
+        list: ['X.com', 'Email', 'Facebook', 'LinkedIn']
       }
     }),
     defineField({
-      name: 'tweetUrl',
-      title: 'Tweet URL',
+      name: 'xUrl',
+      title: 'X URL',
       type: 'url',
       hidden: ({ document }) => document?.source !== 'Twitter'
     }),
