@@ -11,6 +11,7 @@ interface ChatBubblesProps {
   id: string
   status?: 'pending' | 'typing' | 'sent'
   onClick?: () => void
+  className?: string
 }
 
 export function ChatBubble({
@@ -20,6 +21,7 @@ export function ChatBubble({
   id,
   status = 'pending',
   onClick,
+  className,
 }: ChatBubblesProps) {
   const [messageStatus, setMessageStatus] = useState<
     'pending' | 'typing' | 'sent'
@@ -43,9 +45,11 @@ export function ChatBubble({
         <motion.div
           key={`chat-bubble-${id}`}
           initial={{ height: 0 }}
-          animate={{ height: 'auto' }}
+          animate={{
+            height: 'auto',
+            transition: { duration: 0.2, delayChildren: 1 },
+          }}
           exit={{ height: 0 }}
-          transition={{ duration: 0.2, delayChildren: 0.2 }}
           onClick={onClick}
           className="mb-1"
         >
@@ -54,14 +58,20 @@ export function ChatBubble({
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className={`flex ${context === 'outgoing' ? 'justify-end' : 'justify-start'}`}
+            className={cn('flex', {
+              'justify-end': context === 'outgoing',
+              'justify-start': context === 'incoming',
+            })}
           >
             <div
-              className={`relative max-w-[70%] rounded-2xl p-3 ${
-                context === 'outgoing'
-                  ? 'bg-[#278EFF] text-white'
-                  : 'bg-gray-200 text-black'
-              }`}
+              className={cn(
+                'relative max-w-[70%] rounded-2xl p-3',
+                {
+                  'bg-[#278EFF] text-white': context === 'outgoing',
+                  'bg-gray-200 text-black': context === 'incoming',
+                },
+                className,
+              )}
             >
               <p className="text-sm">{message}</p>
 
@@ -141,6 +151,9 @@ export const Chat: React.FC<{ faq: FAQ }> = ({ faq }) => {
         status="sent"
         context="outgoing"
         id="1"
+        className={cn({
+          'cursor-pointer': !clicked,
+        })}
       />
       <ChatBubble
         message={faq.answer}
