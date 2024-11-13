@@ -15,10 +15,10 @@ export default function Page() {
 
           <h2>1. Introduction</h2>
           <p>
-            At <strong>Cleaning Website Templates</strong> ("we," "us," or
-            "our"), we are committed to protecting your privacy. This Privacy
-            Policy outlines how we collect, use, and safeguard your personal
-            information when you visit our website{' '}
+            At <strong>Cleaning Website Templates</strong> (&quot;we,&quot;
+            &quot;us,&quot; or &quot;our&quot;), we are committed to protecting
+            your privacy. This Privacy Policy outlines how we collect, use, and
+            safeguard your personal information when you visit our website{' '}
             <a href="http://www.cleaningwebsitetemplates.com">
               www.cleaningwebsitetemplates.com
             </a>{' '}
@@ -78,8 +78,8 @@ export default function Page() {
             <li>
               <strong>Service Providers</strong>: We use Stripe for secure
               payment processing. Your billing information is shared with Stripe
-              solely for transaction purposes. Stripe's Privacy Policy can be
-              found <a href="https://stripe.com/privacy">here</a>.
+              solely for transaction purposes. Stripe&apos;s Privacy Policy can
+              be found <a href="https://stripe.com/privacy">here</a>.
             </li>
             <li>
               <strong>Legal Obligations</strong>: We may disclose your
