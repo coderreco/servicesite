@@ -1,12 +1,16 @@
 import formsPlugin from '@tailwindcss/forms'
 import headlessuiPlugin from '@headlessui/tailwindcss'
-import colors from 'tailwindcss/colors';
+import colors from 'tailwindcss/colors'
 const {
   default: flattenColorPalette,
-} = require("tailwindcss/lib/util/flattenColorPalette");
+} = require('tailwindcss/lib/util/flattenColorPalette')
 
 export default {
-  content: ['./src/**/*.{js,jsx,ts,tsx}', './node_modules/@medusajs/ui/dist/**/*.{js,jsx,ts,tsx}', './node_modules/@tremor/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './src/**/*.{js,jsx,ts,tsx}',
+    './node_modules/@medusajs/ui/dist/**/*.{js,jsx,ts,tsx}',
+    './node_modules/@tremor/**/*.{js,ts,jsx,tsx}',
+  ],
   darkMode: 'class',
   theme: {
     fontSize: {
@@ -27,12 +31,12 @@ export default {
     extend: {
       borderRadius: {
         '4xl': '2rem',
-        none: "0px",
-        soft: "2px",
-        base: "4px",
-        rounded: "8px",
-        large: "16px",
-        circle: "9999px",
+        none: '0px',
+        soft: '2px',
+        base: '4px',
+        rounded: '8px',
+        large: '16px',
+        circle: '9999px',
         'tremor-small': '0.375rem',
         'tremor-default': '0.5rem',
         'tremor-full': '9999px',
@@ -46,56 +50,56 @@ export default {
       },
       keyframes: {
         ring: {
-          "0%": { transform: "rotate(0deg)" },
-          "100%": { transform: "rotate(360deg)" },
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
         },
-        "fade-in-right": {
-          "0%": { opacity: 0, transform: "translateX(20px)" },
-          "100%": { opacity: 1, transform: "translateX(0)" },
+        'fade-in-right': {
+          '0%': { opacity: 0, transform: 'translateX(20px)' },
+          '100%': { opacity: 1, transform: 'translateX(0)' },
         },
-        "fade-in-top": {
-          "0%": { opacity: 0, transform: "translateY(-20px)" },
-          "100%": { opacity: 1, transform: "translateY(0)" },
+        'fade-in-top': {
+          '0%': { opacity: 0, transform: 'translateY(-20px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
         },
-        "fade-out-top": {
-          "0%": { opacity: 1, transform: "translateY(0)" },
-          "100%": { opacity: 0, transform: "translateY(-20px)" },
-        }, 
-        "accordion-slide-down": {
-          "0%": { opacity: 0, height: 0 },
-          "100%": { opacity: 1, height: "auto" },
+        'fade-out-top': {
+          '0%': { opacity: 1, transform: 'translateY(0)' },
+          '100%': { opacity: 0, transform: 'translateY(-20px)' },
         },
-        "accordion-slide-up": {
-          "0%": { opacity: 1, height: "auto" },
-          "100%": { opacity: 0, height: 0 },
+        'accordion-slide-down': {
+          '0%': { opacity: 0, height: 0 },
+          '100%': { opacity: 1, height: 'auto' },
+        },
+        'accordion-slide-up': {
+          '0%': { opacity: 1, height: 'auto' },
+          '100%': { opacity: 0, height: 0 },
         },
         enter: {
-          "0%": { opacity: 0 },
-          "100%": { opacity: 1 },
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
         },
-        "slide-in": {
-          "0%": { transform: "translateX(100%)" },
-          "100%": { transform: "translateX(0)" },
+        'slide-in': {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0)' },
         },
         leave: {
-          "0%": { opacity: 1 },
-          "100%": { opacity: 0 },
+          '0%': { opacity: 1 },
+          '100%': { opacity: 0 },
         },
       },
       animation: {
-        ring: "ring 2.2s cubic-bezier(0.5, 0, 0.5, 1) infinite",
-        "fade-in-right":
-          "fade-in-right 0.3s cubic-bezier(0.5, 0, 0.5, 1) forwards",
-        "fade-in-top": "fade-in-top 0.2s cubic-bezier(0.5, 0, 0.5, 1) forwards",
-        "fade-out-top":
-          "fade-out-top 0.2s cubic-bezier(0.5, 0, 0.5, 1) forwards",
-        "accordion-open":
-          "accordion-slide-down 300ms cubic-bezier(0.87, 0, 0.13, 1) forwards",
-        "accordion-close":
-          "accordion-slide-up 300ms cubic-bezier(0.87, 0, 0.13, 1) forwards",
-        enter: "enter 200ms ease-out",
-        "slide-in": "slide-in 1.2s cubic-bezier(.41,.73,.51,1.02)",
-        leave: "leave 150ms ease-in forwards",
+        ring: 'ring 2.2s cubic-bezier(0.5, 0, 0.5, 1) infinite',
+        'fade-in-right':
+          'fade-in-right 0.3s cubic-bezier(0.5, 0, 0.5, 1) forwards',
+        'fade-in-top': 'fade-in-top 0.2s cubic-bezier(0.5, 0, 0.5, 1) forwards',
+        'fade-out-top':
+          'fade-out-top 0.2s cubic-bezier(0.5, 0, 0.5, 1) forwards',
+        'accordion-open':
+          'accordion-slide-down 300ms cubic-bezier(0.87, 0, 0.13, 1) forwards',
+        'accordion-close':
+          'accordion-slide-up 300ms cubic-bezier(0.87, 0, 0.13, 1) forwards',
+        enter: 'enter 200ms ease-out',
+        'slide-in': 'slide-in 1.2s cubic-bezier(.41,.73,.51,1.02)',
+        leave: 'leave 150ms ease-in forwards',
       },
       transparent: 'transparent',
       current: 'currentColor',
@@ -213,18 +217,22 @@ export default {
     },
   ],
   presets: [require('@medusajs/ui-preset')],
-  plugins: [formsPlugin, headlessuiPlugin, addVariablesForColors],
-} 
-
+  plugins: [
+    formsPlugin,
+    headlessuiPlugin,
+    addVariablesForColors,
+    require('@tailwindcss/typography'),
+  ],
+}
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
 function addVariablesForColors({ addBase, theme }: any) {
-  let allColors = flattenColorPalette(theme("colors"));
+  let allColors = flattenColorPalette(theme('colors'))
   let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
-  );
- 
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
+  )
+
   addBase({
-    ":root": newVars,
-  });
+    ':root': newVars,
+  })
 }

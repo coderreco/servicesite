@@ -43,6 +43,7 @@
   },
   "devDependencies": {
     "@medusajs/ui-preset": "^1.1.3",
+    "@tailwindcss/typography": "^0.5.15",
     "eslint": "^8",
     "eslint-config-next": "^14.2.4",
     "prettier": "^3.3.2",
