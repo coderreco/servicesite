@@ -11,12 +11,12 @@ export function Footer() {
         <div className="py-16">
           <Logo className="mx-auto h-10 w-auto" />
           <nav className="mt-10 text-sm" aria-label="quick links">
-            <div className="-my-1 flex flex-col items-center sm:flex-row justify-center gap-2">
-              <NavLink href="#features">Features</NavLink>
-              <NavLink href="#casestudy">Case study</NavLink>
-              <NavLink href="#testimonials">Testimonials</NavLink>
-              <NavLink href="#pricing">Pricing</NavLink>
-              <NavLink href="#faq">FAQs</NavLink>
+            <div className="-my-1 flex flex-col items-center justify-center gap-2 sm:flex-row">
+              <NavLink href="/#features">Features</NavLink>
+              <NavLink href="/#casestudy">Case study</NavLink>
+              <NavLink href="/#testimonials">Testimonials</NavLink>
+              <NavLink href="/#pricing">Pricing</NavLink>
+              <NavLink href="/#faq">FAQs</NavLink>
             </div>
           </nav>
         </div>
@@ -42,7 +42,8 @@ export function Footer() {
             </Link>
           </div> */}
           <p className="mt-6 text-sm text-slate-500 sm:mt-0">
-            Copyright &copy; {new Date().getFullYear()} <Link href="https://www.coderre.co">CoderreCo</Link>. All rights
+            Copyright &copy; {new Date().getFullYear()}{' '}
+            <Link href="https://www.coderre.co">CoderreCo</Link>. All rights
             reserved.
           </p>
         </div>
