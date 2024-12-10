@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import { useState } from 'react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
@@ -7,22 +7,31 @@ import clsx from 'clsx'
 import SubmitButton from '../../SubmitButton'
 import { SubmitMockupRequest } from '@/app/lib/actions'
 
-
 export default function MockupPageTemplate() {
   const [agreed, setAgreed] = useState(false)
 
   return (
     <div className="isolate px-6 py-24 lg:px-8">
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-display tracking-tight text-gray-900 sm:text-4xl">Get your free mockup</h2>
+        <h2 className="font-display text-3xl tracking-tight text-gray-900 sm:text-4xl">
+          Get your free mockup
+        </h2>
         <p className="mt-2 text-base leading-8 text-gray-600">
-          Want to see what your cleaning business website could look like?<br/> Fill out the form below to <strong>get a free mockup.</strong>
+          Want to see what your cleaning business website could look like?
+          <br /> Fill out the form below to <strong>get a free mockup.</strong>
         </p>
       </div>
-      <form action={SubmitMockupRequest} method="POST" className="mx-auto mt-12 max-w-xl">
+      <form
+        action={SubmitMockupRequest}
+        method="POST"
+        className="mx-auto mt-12 max-w-xl"
+      >
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
-            <label htmlFor="name" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label
+              htmlFor="name"
+              className="block text-sm font-semibold leading-6 text-gray-900"
+            >
               Name
             </label>
             <div className="mt-2.5">
@@ -36,7 +45,10 @@ export default function MockupPageTemplate() {
             </div>
           </div>
           <div>
-            <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label
+              htmlFor="email"
+              className="block text-sm font-semibold leading-6 text-gray-900"
+            >
               Email
             </label>
             <div className="mt-2.5">
@@ -45,6 +57,7 @@ export default function MockupPageTemplate() {
                 name="email"
                 id="email"
                 autoComplete="email"
+                required
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
@@ -64,7 +77,10 @@ export default function MockupPageTemplate() {
             </div>
           </div> */}
           <div className="">
-            <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label
+              htmlFor="company"
+              className="block text-sm font-semibold leading-6 text-gray-900"
+            >
               Company
             </label>
             <div className="mt-2.5">
@@ -78,7 +94,10 @@ export default function MockupPageTemplate() {
             </div>
           </div>
           <div className="">
-            <label htmlFor="website" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label
+              htmlFor="website"
+              className="block text-sm font-semibold leading-6 text-gray-900"
+            >
               Website
             </label>
             <div className="mt-2.5">
@@ -124,7 +143,10 @@ export default function MockupPageTemplate() {
             </div>
           </div> */}
           <div className="sm:col-span-2">
-            <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label
+              htmlFor="message"
+              className="block text-sm font-semibold leading-6 text-gray-900"
+            >
               Message
             </label>
             <div className="mt-2.5">
