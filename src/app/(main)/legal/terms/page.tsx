@@ -37,7 +37,7 @@ export default function Page() {
             <em>Last Updated: 11/01/24</em>
           </p>
 
-          <h2>1. Acceptance of Terms</h2>
+          <h2 id="acceptance">1. Acceptance of Terms</h2>
           <p>
             By purchasing our products and services, you agree to be bound by
             these Terms of Service (&quot;Terms&quot;). Please read them
@@ -45,7 +45,7 @@ export default function Page() {
             Terms, you should not use our services.
           </p>
 
-          <h2>2. Services Provided</h2>
+          <h2 id="services-provided">2. Services Provided</h2>
           <ul>
             <li>
               <strong>Website Template:</strong> Upon receipt of the upfront
@@ -71,7 +71,7 @@ export default function Page() {
             </li>
           </ul>
 
-          <h2>3. Payment Terms</h2>
+          <h2 id="payment-terms">3. Payment Terms</h2>
           <ul>
             <li>
               <strong>Upfront Payment:</strong> The one-time fee of{' '}
@@ -88,7 +88,7 @@ export default function Page() {
             </li>
           </ul>
 
-          <h2>4. Support Tickets</h2>
+          <h2 id="support-tickets">4. Support Tickets</h2>
           <ul>
             <li>
               <strong>Usage:</strong> Support tickets can be used for fixes,
@@ -109,7 +109,7 @@ export default function Page() {
             </li>
           </ul>
 
-          <h2>5. Hosting Services</h2>
+          <h2 id="hosting-services">5. Hosting Services</h2>
           <ul>
             <li>
               <strong>Provision:</strong> We will provide hosting services for
@@ -127,7 +127,7 @@ export default function Page() {
             </li>
           </ul>
 
-          <h2>6. Post-Contract Support</h2>
+          <h2 id="post-contract">6. Post-Contract Support</h2>
           <ul>
             <li>
               <strong>New Support Agreement:</strong> After the 24-month period,
@@ -141,7 +141,7 @@ export default function Page() {
             </li>
           </ul>
 
-          <h2>7. Customer Responsibilities</h2>
+          <h2 id="customer-responsibilities">7. Customer Responsibilities</h2>
           <ul>
             <li>
               <strong>Content:</strong> You are responsible for providing all
@@ -155,7 +155,7 @@ export default function Page() {
             </li>
           </ul>
 
-          <h2>8. Intellectual Property</h2>
+          <h2 id="intellectual-property">8. Intellectual Property</h2>
           <ul>
             <li>
               <strong>Ownership:</strong> All intellectual property rights in
@@ -169,7 +169,7 @@ export default function Page() {
             </li>
           </ul>
 
-          <h2>9. Termination</h2>
+          <h2 id="termination">9. Termination</h2>
           <ul>
             <li>
               <strong>By You:</strong> You may terminate the subscription at any
@@ -182,32 +182,32 @@ export default function Page() {
             </li>
           </ul>
 
-          <h2>10. Limitation of Liability</h2>
+          <h2 id="liability">10. Limitation of Liability</h2>
           <p>
             We shall not be liable for any indirect, incidental, or
             consequential damages arising out of or relating to the use of our
             services.
           </p>
 
-          <h2>11. Disclaimer of Warranties</h2>
+          <h2 id="warranty">11. Disclaimer of Warranties</h2>
           <p>
             Our services are provided &quot;as is&quot; without warranties of
             any kind, either express or implied.
           </p>
 
-          <h2>12. Governing Law</h2>
+          <h2 id="governing-law">12. Governing Law</h2>
           <p>
             These Terms shall be governed by and construed in accordance with
             the laws of British Columbia, Canada.
           </p>
 
-          <h2>13. Changes to Terms</h2>
+          <h2 id="changes">13. Changes to Terms</h2>
           <p>
             We reserve the right to modify these Terms at any time. Changes will
             be effective immediately upon posting on our website.
           </p>
 
-          <h2>14. Contact Information</h2>
+          <h2 id="contact">14. Contact Information</h2>
           <p>
             For any questions or concerns regarding these Terms, please contact
             us at:

@@ -147,7 +147,7 @@ export default function Comparison() {
           <div className="mt-12 flex justify-center gap-x-6 pb-1">
             <Button href="/mockup">Get my mockup</Button>
             <Button
-              href="https://cal.com/team/industry-website-templates/cleaning-template-information"
+              href="https://cal.com/team/one-week-websites/cleaning-template-information"
               variant="outline"
             >
               {/* <svg

@@ -13,14 +13,17 @@ export function CallToAction() {
             Get a free mockup
           </h2>
           <p className="mt-4 text-lg tracking-tight text-white">
-            Send us your website and we&apos;ll show you how it can look using our template, at no charge.
+            Send us your website and we&apos;ll show you how it can look using
+            our template, at no charge.
           </p>
           <div className="mt-6 flex justify-center gap-x-6">
-            <Button href="/mockup" color='white'>Get my mockup</Button>
+            <Button href="/mockup" color="white">
+              Get my mockup
+            </Button>
             <Button
-              href="https://cal.com/team/industry-website-templates/cleaning-template-information"
+              href="https://cal.com/team/one-week-websites/cleaning-template-information"
               variant="outline"
-              color='white'
+              color="white"
             >
               {/* <svg
                 aria-hidden="true"
