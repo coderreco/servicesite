@@ -36,6 +36,7 @@ export const SubmitMockupRequest = async (formData: FormData) => {
   const data = {
     name: formData.get('name'),
     email: formData.get('email') as string,
+    phoneNumber: formData.get('phone-number') as string,
     company: formData.get('company'),
     website: formData.get('website'),
     message: formData.get('message'),
