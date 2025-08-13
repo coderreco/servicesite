@@ -27,15 +27,15 @@ export default function Page() {
             <li>
               <strong>Easy-to-Use Editor Access</strong> – You’ll have login
               access to make content changes yourself at any time. You can:
+              <ul>
+                <li>Edit text, photos, and other content on your pages</li>
+                <li>
+                  Add new pages using built-in templates (service pages,
+                  location pages, project pages, blog posts, etc.)
+                </li>
+                <li>Publish new content instantly without waiting for us</li>
+              </ul>
             </li>
-          </ul>
-          <ul>
-            <li>Edit text, photos, and other content on your pages</li>
-            <li>
-              Add new pages using built-in templates (service pages, location
-              pages, project pages, blog posts, etc.)
-            </li>
-            <li>Publish new content instantly without waiting for us</li>
           </ul>
           <ul>
             <li>
